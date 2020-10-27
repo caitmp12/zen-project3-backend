@@ -14,3 +14,4 @@ const Treat = model("treat", treatSchema);
 
 // EXPORT MODEL
 module.exports = Treat;
+
