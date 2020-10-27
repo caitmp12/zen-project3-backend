@@ -3,9 +3,6 @@
 
 //Gen Schema
 
-
-
-
-
+// const Gen = model("gen", genSchema);
 // EXPORT MODEL
-module.exports = User;
+// module.exports = Gen;
