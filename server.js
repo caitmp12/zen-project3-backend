@@ -27,6 +27,7 @@ const authRouter = require("./controllers/auth");
 const testRouter = require("./controllers/test");
 const treatsRouter = require("./controllers/treats")
 const drinksRouter = require("./controllers/drinks")
+const moviesRouter = require("./controllers/movies")
 
 // OTHER IMPORTS
 // const session = require("express-session");
@@ -71,7 +72,7 @@ app.get("/", (req, res) => {
 app.use("/auth", authRouter);
 app.use("/test", testRouter);
 app.use("/treats", treatsRouter);
-app.use("/drinks", drinksRouter);
+app.use("/movies", drinksRouter);
 ////////////////////////
 //APP LISTENER
 ////////////////////////
