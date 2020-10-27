@@ -16,6 +16,10 @@ const app = express();
 // IMPORT DATABASE CONNECTIONS
 const mongoose = require("./db/dbconn");
 
+//CORS
+const cors = require("cors")
+const corsOptions = require("./config/cors.js")
+
 // ROUTERS
 const authRouter = require("./controllers/auth");
 const testRouter = require("./controllers/test");
@@ -24,7 +28,7 @@ const testRouter = require("./controllers/test");
 // const session = require("express-session");
 // const MongoStore = require("connect-mongo")(session);
 // const methodOverride = require("method-override");
-// const morgan = require("morgan");
+const morgan = require("morgan");
 
 ///////////////////////////////
 // Set View Engine
