@@ -8,4 +8,4 @@
 
 
 // EXPORT MODEL
-module.exports = User;
+module.exports = User; 
