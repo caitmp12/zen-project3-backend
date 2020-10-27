@@ -14,7 +14,7 @@ const express = require("express");
 const app = express();
 
 // IMPORT DATABASE CONNECTIONS
-// const mongoose = require("./db/dbconn");
+const mongoose = require("./db/dbconn");
 
 // ROUTERS
 const authRouter = require("./controllers/auth");
