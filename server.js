@@ -72,7 +72,8 @@ app.get("/", (req, res) => {
 app.use("/auth", authRouter);
 app.use("/test", testRouter);
 app.use("/treats", treatsRouter);
-app.use("/movies", drinksRouter);
+app.use("/drinks", drinksRouter);
+app.use("/movies", moviesRouter);
 ////////////////////////
 //APP LISTENER
 ////////////////////////
