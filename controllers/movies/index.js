@@ -1,10 +1,17 @@
 const Movies = require("../../models/movies");
 const { Router } = require("express");
 const router = Router();
-
+const fetch = require("node-fetch");
 //index route
-router.get("/", async (req, res) => {
-  res.json(await Movies.find({}));
+baseURL = 'http://api.themoviedb.org/3/search/movie?api_key=fed5e089d23c6f1bdd716afb2295ff77&language=en-US&query='
+
+//INDEX ROUTE FOR SEARCHING FOR MOVIES
+router.get("/search/:page/:searchTerm", async (req, res) => {
+    fetch(baseURL + req.params.searchTerm + `&page=${req.params.page}`)
+    .then(response => response.json())
+    .then(data => {
+        res.json(data)
+    })
 });
 
 //create route
