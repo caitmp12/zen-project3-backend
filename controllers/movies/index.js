@@ -14,6 +14,11 @@ router.get("/search/:page/:searchTerm", async (req, res) => {
     })
 });
 
+//index route
+router.get("/", async (req,res)=> {
+    res.json(await Movies.find({}))
+})
+
 //create route
 router.post("/", async (req, res) => {
   res.json(await Movies.create(req.body));
