@@ -1,7 +1,7 @@
 {
   "name": "expressreact",
   "version": "1.0.0",
-  "description": "",
+  "description": "## USING THIS TEMPLATE:",
   "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node server.js",
@@ -13,6 +13,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -21,10 +22,19 @@
     "method-override": "^3.0.0",
     "mongoose": "^5.10.6",
     "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitmp12/zen-project3-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caitmp12/zen-project3-backend/issues"
+  },
+  "homepage": "https://github.com/caitmp12/zen-project3-backend#readme"
 }
