@@ -19,7 +19,7 @@ const mongoose = require("./db/dbconn");
 //CORS
 const cors = require("cors")
 const corsOptions = require("./config/cors.js")
-NODE_ENV === "production" ? app.use(cors(corsOptions)) : app.use(cors());
+NODE_ENV === "production" ? app.use(cors()) : app.use(cors());
 
 
 // ROUTERS
