@@ -1,7 +1,7 @@
 {
   "name": "expressreact",
   "version": "1.0.0",
-  "description": "",
+  "description": "## USING THIS TEMPLATE:",
   "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node server.js",
@@ -28,5 +28,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitmp12/zen-project3-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caitmp12/zen-project3-backend/issues"
+  },
+  "homepage": "https://github.com/caitmp12/zen-project3-backend#readme"
 }
